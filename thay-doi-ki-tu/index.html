@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [
+        [654, '-', 5648, '-', 6489, '-', 7, '-', 321],
+        ['-', 65798, '-', '-', 21, '-', 987, '-', 5, '-', 44],
+        [654, '-', 98, '-', 321, '-', 5, '-', 64, '-', 987, '-', 2641]
+    ];
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array[i].length; j++) {
+            document.write(' ' + array[i][j] + ' ');
+        }
+        document.write('<br>');
+
+    }
+    document.write('<br>');
+
+    function change() {
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (array[i][j] == '-') {
+                    array[i][j] = '_'
+                }
+                document.write(' ' + array[i][j] + ' ');
+            }
+            document.write('<br>');
+
+        }
+    }
+
+    change();
+    console.log(array);
+</script>
+</body>
+</html>
