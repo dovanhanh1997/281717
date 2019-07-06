@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [
+        ['a','d','f',4,6,'f',6,'a','d',5,'f'],
+        ['a',8,'d',7,'f','a',3,2,'d','f',1,6],
+        ['a',5,'d',6,'f',4,8,9,7,'a','d',6,1],
+        [4,6,'a',5,'d','f',7,8,9,7,9,8,'a'],
+        ['a','d',5,'f',6,'a','d',4,'f',8,7,'f',8],
+    ];
+    console.log(arr.length);
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            document.write(" " + arr[i][j] + " ");
+        } document.write("<br>");
+    }
+
+
+    for (let i = 0; i <arr.length; i++) {
+        arr[i].reverse();
+    }
+    console.log(arr.reverse());
+</script>
+</body>
+</html>
